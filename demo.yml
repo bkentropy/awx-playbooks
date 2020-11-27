@@ -1,0 +1,18 @@
+---
+- hosts: all
+  environment:
+    MYNAME: secret123
+  vars:
+    foo: bar
+  gather_facts: false
+
+  tasks:
+    - name: echo my env var
+      environment:
+        MYNAME: Whatever
+      vars:
+        foo: barz
+      shell: "echo hello $MYNAME $foo {{foo}} > /tmp/bla.txt"
+      args:
+        creates: /tmp/bla.txt
+
