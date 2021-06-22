@@ -7,6 +7,9 @@
   gather_facts: false
 
   tasks:
+    - name: ping!
+      ping:
+
     - name: vpn output
       # environment:
       #   MYNAME: Whatever
