@@ -7,7 +7,7 @@
   gather_facts: false
 
   tasks:
-    - name: echo my env var
+    - name: vpn output
       # environment:
       #   MYNAME: Whatever
       # vars:

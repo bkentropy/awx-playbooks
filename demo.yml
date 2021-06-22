@@ -7,7 +7,7 @@
   gather_facts: false
 
   tasks:
-    - name: echo my env var
+    - name: (demo) echo my env var
       environment:
         MYNAME: Whatever
       vars:
